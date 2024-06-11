@@ -9,7 +9,7 @@ int main() {
     s = malloc(1024 * sizeof(char));
     scanf("%[^\n]", s);
     s = realloc(s, strlen(s) + 1);
-      for (char *c = s; *c != NULL; c++) {
+      for (char *c = s; *c != '\0'; c++) {
     if (*c == ' ') {
         *c = '\n';
     }
